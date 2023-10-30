@@ -1,0 +1,110 @@
+program v4;
+var v,m,nboletos,tboletos,edad,estacion,opcion,maximo,codigo,salida,minimo,TRAMOS,cedula,boleteoespecial,descuento,general,exonerado,i:integer;
+var idav,nombre,apellido:string;
+begin
+writeln('bienvenido al teleferico de merida');
+repeat
+writeln('que accion desea realizar');
+writeln('1.comprar boleto');
+writeln('2.ver sistema');
+writeln('3.salir');
+readln(v);
+clrscr();
+exonerado:=0;
+general:=20;
+maximo:=60;
+minimo:=1;
+ case v of 
+    1:begin
+    writeln();
+    writeln('usted escogio comprar boleto'); 
+    if v=1 then writeln('ingrese la cantidad de boletos que desea comprar');
+    readln(nboletos);
+    val(nboletos,codigo);
+if codigo<>0 then
+writeln('la cantidad de boletos que ingreso es valida ' , nboletos)
+else
+writeln('Error de sistema' ,codigo);
+    end;
+    begin
+    if nboletos=0 then writeln('la cantidad minima de boletos es 1');
+    end;
+    begin
+     if nboletos>60 then writeln('la cantidad maxima de boletos es 60');
+     
+         end;
+     writeln('desea realizar la compra de ',nboletos, ' boletos de ida y vuelta?');
+     readln(idav);
+     begin
+      for i:=1 to nboletos do 
+          end;
+    writeln('ingrese la edad de las personas que viajaron con usted',i);
+    readln(edad);
+    begin
+      for i:=1 to nboletos do 
+          end;
+    begin
+    if edad<3 then
+    edad:=exonerado else 
+    if edad=exonerado then 
+    writeln('esa persona se encuentra exonerado') else
+    if edad<12 then
+    edad:=descuento else 
+    if edad>12 then
+    edad:=general
+    end;
+    writeln('para continuar con la venta de su boleto debe de ingresarnos los siquientes datos');
+          writeln('nombre');
+       readln(nombre);
+       writeln('apellido');
+       readln(apellido);
+       writeln('cedula de identidad');
+       readln(cedula);
+         writeln('------------------');
+         writeln('----estaciones----');
+         writeln('------------------');
+         writeln('-1.barinas--------');
+         writeln('-2.la montana-----');
+         writeln('-3.la aguada------');
+         writeln('-4.loma redonda---');
+         writeln('-5.pico espejo----');
+         writeln('------------------');
+            writeln('escoga la estacion en la que desea viajar ');
+         readln(estacion);
+     case estacion of
+     1:   writeln('La estacion escogida es barinas');
+     2:   writeln('La estacion escogida es la montana');
+     3:   writeln('La estacion escogida es la aguada');
+     4:   writeln('La estacion escogida es loma redonda');
+     5:   writeln('La estacion escogida es pico espejo');
+     end;
+         writeln('------------------');
+         writeln('------tramos------');
+         writeln('------------------');
+         writeln('-1.baritinas-la montana-');
+         writeln('-2.la montana-la aguada-');
+         writeln('-3.la aguada-loma redonda-');
+         writeln('-4.loma redonda-pico espejo-');
+         writeln('------------------');
+         writeln('escoga el tramo que desea visitar');
+         READLN(TRAMOS);
+              case TRAMOS of
+     1:   writeln('El tramo escogido es baritinas-la montana');
+     2:   writeln('El tramo escogido es la montana-la aguada');
+     3:   writeln('El tramo escogido es la aguada-loma redonda');
+     4:   writeln('El tramo escogido es loma redonda-pico espejo');
+     end;
+
+writeln('---------------------------');
+writeln(' FACTURA ');
+writeln('---------------------------');
+writeln('nombre del cliente : ', nombre);
+writeln('apellido : ', apellido);
+writeln('estacion de origen: ', estacion);
+writeln('tramo escogido: ', tramos);
+writeln('tipo de  boleto: ', tboletos);
+
+writeln('cantidad de boletos ', nboletos);
+writeln('---------------------------');
+writeln('Total a pagar: $');
+  end.
