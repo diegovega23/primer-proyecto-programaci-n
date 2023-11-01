@@ -1,0 +1,58 @@
+Teleférico de Mérida:
+Inicio del programa
+- Definir las variables: cespecial, capacidadmax, nboletos, tboletos, edad, estacion,
+TRAMOS, cedula, descuento, general, exonerado, i, opciones, totalventas, salida,
+cgeneral, adisponibles, reporte y cexonerados como enteros
+- Definir la variable nombre y apellido como cadenas de caracteres
+- Repetir:
+ - Mostrar mensaje de bienvenida al Teleférico de Mérida
+ - Mostrar opciones disponibles: comprar boleto, ver sistema y salir
+ - Leer la opción elegida por el usuario
+ - Inicializar las variables cgeneral, cespecial, cexonerados y salida en 0
+ - Definir las variables exonerado, general, descuento y tboletos con sus respectivos
+valores
+ - Definir la variable capacidadmax como la capacidad máxima del teleférico
+ - Calcular la cantidad de boletos disponibles restando la cantidad de boletos
+comprados a la capacidad máxima del teleférico
+ - Calcular el total de ventas sumando la cantidad de boletos generales y especiales
+comprados
+ - Calcular el reporte sumando la cantidad de boletos generales y especiales
+comprados por la cantidad de boletos exonerados
+ - Según la opción elegida por el usuario:
+ - Si es 1:
+ - Mostrar mensaje pidiendo la cantidad de boletos generales que desea comprar
+ - Leer la cantidad de boletos generales que desea comprar
+ - Mostrar mensaje pidiendo la cantidad de boletos para niños y tercera edad que
+desea comprar
+ - Leer la cantidad de boletos para niños y tercera edad que desea comprar
+ - Mostrar mensaje pidiendo la cantidad de boletos para individuos exonerados
+que va a requerir
+ - Leer la cantidad de boletos para individuos exonerados que va a requerir
+ - Mostrar mensaje pidiendo la cantidad de boletos que desea comprar
+ - Leer la cantidad de boletos que desea comprar
+ - Si la cantidad de boletos es igual a 0, mostrar mensaje indicando que la
+cantidad mínima de boletos es 1
+ - Si la cantidad de boletos es mayor a 60, mostrar mensaje indicando que la
+cantidad máxima de boletos es 60
+ - Para cada boleto comprado:
+ - Mostrar mensaje pidiendo la edad de la persona que va a viajar
+ - Leer la edad de la persona que va a viajar
+ - Si la edad es menor a 3 años, asignar el valor de exonerado a la variable edad
+ - Si la edad es igual a exonerado, mostrar mensaje indicando que esa persona se
+encuentra exonerada
+ - Si la edad es menor a 12 años, asignar el valor de descuento a la variable edad
+ - Si la edad es mayor o igual a 12 años, asignar el valor de general a la variable
+edad
+ - Mostrar mensaje pidiendo los datos personales del cliente: nombre, apellido y
+cédula de identidad
+ - Leer el nombre, apellido y cédula de identidad del cliente
+ - Mostrar opciones disponibles de estaciones y tramos
+ - Leer la estación y tramo elegidos por el usuario
+ - Mostrar factura con los datos del cliente, la estación de origen y el tramo
+elegido
+ - Si es 2:
+ - Mostrar el sistema con la cantidad de boletos disponibles, el total de ventas y el
+reporte
+ - Si es 3:
+ - Asignar el valor de 1 a la variable salida para salir del programa
+- Fin del programa Teleférico de Mérida
